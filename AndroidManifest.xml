@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tampasst.tampass.tampass">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity
+            android:name=".Start"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Categories"
+            android:label="@string/Popular_Categories" />
+        <activity
+            android:name=".All_Categories"
+            android:label="@string/All_Categories" />
+        <activity android:name=".CategorieContent" />
+        <activity
+            android:name=".Profile"
+            android:label="@string/profile" />
+        <activity android:name=".ShowContent" />
+        <activity
+            android:name=".CreateProfile"
+            android:label="Sign Up" />
+        <activity
+            android:name=".FirstStepCreateAcount"
+            android:label="Log In" />
+        <activity
+            android:name=".BusinessList"
+            android:label="Businesses" />
+        <activity
+            android:name=".AddBusiness"
+            android:label="Add Business" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Maps"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".ChooseLocationForBusiness"
+            android:label="@string/title_activity_choose_location_for_business" />
+        <activity android:name=".AddProfileImage" />
+        <activity android:name=".ProfileShow" />
+        <activity
+            android:name=".ProfileShowMap"
+            android:label="@string/title_activity_profile_show_map" />
+        <activity
+            android:name=".ProfileMap"
+            android:label="@string/title_activity_profile_map" />
+        <activity android:name=".Profile_Events" />
+        <activity android:name=".Profile_Events_Add" />
+        <activity android:name=".All_Events"
+            android:label="@string/events"/>
+        <activity
+            android:name=".Show_Content_Map"
+            android:label="@string/title_activity_show__content__map" />
+        <activity android:name=".ShowContent_Events" />
+        <activity
+            android:name=".Recently_Viewed"
+            android:label="@string/recentlyViewed" />
+        <activity android:name=".ShowContent_Search" />
+        <activity android:name=".ShowContent_Search_Events" />
+        <activity
+            android:name=".ShowContent_Search_Map"
+            android:label="@string/title_activity_show_content__search__map" />
+    </application>
+
+</manifest>
